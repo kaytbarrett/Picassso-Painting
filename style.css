@@ -1,0 +1,128 @@
+@media (max-width:1680px) {
+    .gridContainer {
+        gap: 10rem !important;
+    }
+}
+
+@media (max-width:1024px) {
+    .gridContainer {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        gap: 2rem !important;
+    }
+}
+
+@media (max-width:480px) {
+    .gridContainer {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        grid-template-rows: 120px !important;
+        gap: 1rem !important;
+    }
+
+    .triangle {
+        border-left: 20px solid transparent !important;
+        border-right: 20px solid transparent !important;
+        border-bottom: 65px solid #AF3E4D !important;
+    }
+
+    .triangle:nth-child(odd) {
+        border-bottom: 65px solid #A97C73 !important;
+    }
+
+    .triangle2 {
+        border-left: 25px solid transparent !important;
+        border-right: 25px solid transparent !important;
+        border-bottom: 80px solid #AF3E4D !important;
+    }
+
+}
+
+body {
+    background-color: #9CFFFA;
+}
+
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    gap: 12rem;
+}
+
+.gridItem {
+    position: absolute;
+    background-color: #ACF39D;
+    padding: 100px;
+    text-align: center;
+    border-radius: 50%;
+    grid-row-start: 1;
+    z-index: 2;
+}
+
+.gridItem:nth-child(even) {
+    background-color: #21897E;
+}
+
+.smallCircle {
+    position: relative;
+    background-color: #E5D1D0;
+    border-radius: 50%;
+    grid-row-start: 1;
+    z-index: 1;
+}
+
+.line {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 250px solid #AF3E4D;
+    margin: 0px;
+}
+
+.triangle:nth-child(odd) {
+    border-bottom: 250px solid #A97C73;
+}
+
+.triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 300px solid #AF3E4D;
+    margin: 0px;
+}
+
+article {
+    border: solid;
+    background-color: #C2FFFC;
+    margin: 20px;
+}
+
+article h2 {
+    display: flex;
+    justify-content: center;
+}
+article div {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    width: 65px;
+    display: flex;
+    flex-direction: row;
+}
